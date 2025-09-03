@@ -12,7 +12,9 @@ given in the comments.
 
 const question1 = (myNumber) => {
   /////////// create your loop below this line ///////////
-
+  while (myNumber < 100) {
+    myNumber++;
+  }
   /////////// create your loop above this line ///////////
   return myNumber;
 };
@@ -26,7 +28,10 @@ const question1 = (myNumber) => {
 
 const question2 = (myNumber) => {
   /////////// create your loop below this line ///////////
-
+  while (myNumber > 0) {
+    if (myNumber === 10) { break; }
+    myNumber--;
+  }
   /////////// create your loop above this line ///////////
   return myNumber;
 };
@@ -47,7 +52,12 @@ const question2 = (myNumber) => {
 const question3 = (myString) => {
   let myValue;
   /////////// create your loop below this line ///////////
-
+  for (let i = 0; i < myString.length; i++) {
+    myValue = i;
+    if (myString.charAt(i) === "S") {
+      break;
+    }
+  }
   /////////// create your loop above this line ///////////
   return myValue;
 };
@@ -63,7 +73,14 @@ const question3 = (myString) => {
 
 const question4 = (myNumber) => {
   /////////// create your loop below this line ///////////
-
+  do {
+    if (myNumber === 3) {
+      myNumber += 4;
+    continue;
+    }
+    myNumber += 2;
+  }
+  while (myNumber < 5);
   /////////// create your loop above this line ///////////
   return myNumber;
 };
